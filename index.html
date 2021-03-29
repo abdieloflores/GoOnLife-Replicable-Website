@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Go On Life</title>
+</head>
+
+<body>
+  <div class="goUp text-center" onclick="javascript:window.scrollTo(0, 0)"><i class="fas fa-angle-up"></i></div>
+  <header class="sticky-md-top">
+    <!--Top bar-->
+    <div class="container-fluid bar" id="bar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <p class="m-0 d-block d-md-inline-block text-start">
+          <span id="id" class="fw-bold">ID: 000000000</span> - <span id="name" class="text-uppercase">Nombre del Asociado</span>
+        </p>
+        <a class="btn btn-bar my-1"
+          href="#"
+          target="_blank"><i class="fas fa-user-plus me-2"></i>Registrarme</a>
+      </div>
+    </div>
+    <!--End top bar-->
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-md navbar-light bg-white py-3">
+      <div class="container">
+        <img class="logo" src="./img/Logo.png" alt="Logo Go On Life" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link p" onclick="javascript:window.scrollTo(0, 0)">Inicio</a>
+            <a class="nav-link" href="#products">Productos</a>
+            <a class="nav-link" href="#oportunity">Oportunidad</a>
+            <a class="nav-link" href="#company">Compañía</a>
+            <a class="nav-link p" data-bs-toggle="modal" data-bs-target="#contactModal">Contáctame</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--End navigation-->
+  </header>
+  <!--Modal Contact-->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content bg-modal">
+        <div class="modal-body p-5">
+          <div class="content">
+            <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="row">
+              <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                <img class="img-circle" src="./img/Perfil.jpg" alt="Imagen Perfil" />
+              </div>
+              <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                <div class="text-secondary">
+                  <h2 class="fw-bold mb-3 text-uppercase text-start">Este es el nombre del Asociado</h2>
+                  <p class="mb-5 text-start">Esta es la descripción. Esta es la descripción. Esta es la descripción. Esta es la descripción. Esta es la descripción. Esta es la descripción. Esta es la descripción. Esta es la descripción. Esta es la descripción. Esta es la descripción. Esta es la descripción. Esta es la descripción. Esta es la descripción. Esta es la descripción. Esta es la descripción. Esta es la descripción. Esta es la descripción. Esta es la descripción.</p>
+                  <p class="fw-bold mb-3 text-start">Datos de contacto:</p>
+                  <p class="text-lowercase text-start"><span class="icon-circle"><i class="fas fa-mobile-alt"></i></span></i> 0000000000</p>
+                  <p class="text-lowercase text-start"><span class="icon-circle"><i class="far fa-envelope"></i></span></i> correo@correo.com</p>
+                  <p class="text-lowercase text-start"><span class="icon-circle"><i class="fab fa-facebook-f"></i></span></i> facebook.com/mifacebook</p>
+                  <p class="text-lowercase text-start"><span class="icon-circle"><i class="fab fa-twitter"></i></i></span></i> twitter.com/mitwitter</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Modal Contact-->
+  <main>
+    <!--Carrousel-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-message">
+            <div>
+              <h3>¡BXC, el único todo en uno del mercado!</h3>
+              <p>
+                Proteínas, vitaminas, minerales, aceites esenciales, fibras,
+                antioxidantes, oligoelementos y mucho más en un solo
+                suplemento alimenticio.
+              </p>
+              <a class="btn" href="#products">Conoce más</a>
+            </div>
+          </div>
+          <img src="./img/Slide1.jpg" class="d-block" alt="Slide sobre BXC" />
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-message">
+            <div>
+              <h3>Únete a nosotros</h3>
+              <p>
+                Conviértete en un Asociado Independiente de Go On Life y
+                continua tu vida con mejor salud y estabilidad financiera.
+              </p>
+              <a class="btn"
+                href="#"
+                target="_blank">Unirme ahora</a>
+            </div>
+          </div>
+          <img src="./img/Slide2.jpg" class="d-block" alt="Slide sobre el negocio" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--End Carrousel-->
+    <!--Video-->
+    <div class="ratio ratio-16x9">
+      <iframe src="https://www.youtube.com/embed/AYnaC6A3qQU?rel=0" rel="0" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <!--End video-->
+    <!--Products-->
+    <section class="content-fluid" id="products">
+      <div class="section-title text-center">
+        <h2>Nuestros Productos</h2>
+        <div class="divider">
+          <hr />
+          <i class="fab fa-envira"></i>
+          <hr />
+        </div>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+            <img class="img-fluid p-5" src="./img/BXC.png" alt="BXC" />
+          </div>
+          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center px-5">
+            <div>
+              <h2 class="mb-3">
+                <span class="d-none">BXC</span>
+                <img class="w-md-75" src="./img/Logo BXC.png" alt="Logo BXC" />
+              </h2>
+              <p class="text-green">
+                Nutrición en Equilibrio para tu Organismo.
+              </p>
+              <p class="text-green">
+                El único suplemento todo en uno del mercado.
+              </p>
+              <p>
+                BXC es un suplemento alimenticio natural que complementa las
+                necesidades nutrimentales que día a día se requieren,
+                proporcionando los nutrientes para cubrir la I.D.R. (Ingesta
+                Diaria Recomendada), permitiendo que nuestro organismo
+                funcione optima-mente, fortaleciendo nuestros sistemas, para
+                obtener mejor salud.
+              </p>
+
+              <div class="d-grid gap-2">
+                <a class="btn btn-outline-green"
+                  href="https://drive.google.com/file/d/1okHJMcjtqqxtAEZlR-35Arebe9JrITGp/view" target="_blank"><i
+                    class="fab fa-pagelines"></i>Hoja del producto</a>
+                <a class="btn btn-outline-green"
+                  href="https://drive.google.com/file/d/1wNAh-cbL_hMhp-A1zbLXFLZFCt_EZwH4/view" target="_blank"><i
+                    class="fab fa-pagelines"></i>Ficha tecnica</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End products-->
+
+    <!--Oportunity-->
+    <section class="content-fluid" id="oportunity">
+      <div class="section-title text-center">
+        <h2>Oportunidad de Negocio</h2>
+        <div class="divider">
+          <hr />
+          <i class="fas fa-network-wired"></i>
+          <hr />
+        </div>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center px-5">
+            <div>
+              <p>
+                ¿Necesitas cambiar tu situación económica actual? ¿Necesitas
+                tener tiempo libre?, en Go On Life puedes lograrlo ya que
+                estamos en la mega-tendencia de la industria del bienestar y
+                la salud, que actualmente genera 300 billones de dólares
+                anuales y por si fuera poco estamos bajo el sistema que más
+                millonarios ha generado en los últimos años conocido como
+                Network Marketing o Multinivel; pero…
+              </p>
+              <h3 class="my-5">
+                ¿Qué ventaja tengo con
+                <span class="text-green">Go On Life</span>?
+              </h3>
+              <p>
+                Creamos el más innovador y revolucionario plan de
+                compensaciones con el que tienes diversas formas de ganar en
+                corto y mediano plazo beneficiando así aun tus más pequeños
+                esfuerzos y seguir aumentando tus ingresos de una manera
+                sencilla y duplicable con el que que podrás lograr tu libertad
+                financiera que siempre haz soñado.
+              </p>
+            </div>
+          </div>
+          <div class="d-md-block d-none col-12 col-md-6 d-flex justify-content-center align-items-center px-5">
+            <img class="img-fluid w-md-75" src="./img/BussinesWoman_GoOnLife.png" alt="Bussines woman" />
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center px-5">
+              <img class="img-fluid w-md-75 d-md-block d-none" src="./img/Conected.png" alt="Conected woman" />
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center px-5">
+              <div>
+                <h3 class="my-5">
+                  Beneficios de iniciar tu negocio
+                  <span class="text-green">Go On Life</span>
+                </h3>
+                <ul>
+                  <li class="mb-4">Un producto innovador</li>
+                  <li class="mb-4">Un plan de compensaciones exclusivo</li>
+                  <li class="mb-4">
+                    Un sistema para hacer crecer tu negocio
+                  </li>
+                  <li class="mb-4">Generar ingresos en corto plazo</li>
+                  <li class="mb-4">Ser tu propio jefe</li>
+                  <li class="mb-4">Trabajar desde cualquier lugar</li>
+                  <li class="mb-4">Decidir tus horarios</li>
+                  <li class="mb-4">Mejorar tu estilo de vida</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Compensation plan-->
+      <div class="content-fluid">
+        <div class="section-title text-center mt-5">
+          <h2>Plan de Compensaciones</h2>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4 col-md-6">
+            <div class="box">
+              <h3 class="bonus">
+                Ganancias por<br />
+                <span>Venta Directa</span>
+              </h3>
+              <div class="icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <a class="btn btn-outline-green w-50" data-bs-toggle="modal" data-bs-target="#ventasModal">Ver bono</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 col-md-6 box-container">
+            <div class="box">
+              <h3 class="bonus">
+                Bono de <br />
+                <span>Inicio Rápido</span>
+              </h3>
+              <div class="icon">
+                <i class="fas fa-user-edit"></i>
+              </div>
+              <a class="btn btn-outline-green w-50" data-bs-toggle="modal" data-bs-target="#inicioRapidoModal">Ver
+                bono</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 col-md-6 box-container">
+            <div class="box">
+              <h3 class="bonus">
+                Bono<br />
+                <span>Duo-Level</span>
+              </h3>
+              <div class="icon">
+                <i class="fas fa-sitemap"></i>
+              </div>
+              <a class="btn btn-outline-green w-50" data-bs-toggle="modal" data-bs-target="#duoModal">Ver bono</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 col-md-6 box-container">
+            <div class="box">
+              <h3 class="bonus">
+                Bono<br />
+                <span>Generacional</span>
+              </h3>
+              <div class="icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <a class="btn btn-outline-green w-50" data-bs-toggle="modal" data-bs-target="#genModal">Ver bono</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 col-md-6 box-container">
+            <div class="box">
+              <h3 class="bonus">
+                Clientes<br />
+                <span>Preferentes</span>
+              </h3>
+              <div class="icon">
+                <i class="fas fa-user-tag"></i>
+              </div>
+              <a class="btn btn-outline-green w-50" data-bs-toggle="modal" data-bs-target="#cpModal">Ver bono</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 col-md-6 box-container">
+            <div class="box">
+              <h3 class="bonus">
+                Bono<br />
+                <span>Excedentes</span>
+              </h3>
+              <div class="icon">
+                <i class="fas fa-cart-plus"></i>
+              </div>
+              <a class="btn btn-outline-green w-50" data-bs-toggle="modal" data-bs-target="#excModal">Ver bono</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 box-container">
+            <div class="box">
+              <h3 class="bonus">
+                Bonos<br />
+                <span>Liderazgo</span>
+              </h3>
+              <div class="icon">
+                <i class="far fa-id-badge"></i>
+              </div>
+              <a class="btn btn-outline-green w-50" data-bs-toggle="modal" data-bs-target="#lirModal">Ver bono</a>
+            </div>
+          </div>
+
+          <div class="col-offset-0 col-md-offset-6 col-lg-offset-4"></div>
+          <a class="btn btn-lg btn-green" href="https://drive.google.com/file/d/1XBSKDMnRlvZFsnvSx0SF7hfY7s_GlvOL/view"
+            target="_blank"><i class="fas fa-cloud-download-alt"></i>Hoja del Negocio</a>
+          <div class="notes">
+            <p>Notas:</p>
+            <p>
+              * Todos los porcentajes son calculados sobre el Valor
+              Comisionable.
+            </p>
+            <p>
+              * Los resultados pueden variar en relación a la organización
+              formada y el esfuerzo del Asociado Independiente.
+            </p>
+            <p>
+              * En caso de no facturar tus comisiones se retendrá el IVA e ISR
+              correspondientes.
+            </p>
+          </div>
+        </div>
+        <!--Modals oportunity-->
+        <div class="modal fade" id="ventasModal" tabindex="-1" aria-labelledby="ventasModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-body p-5">
+                <div class="content">
+                  <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="text-center w-100 mb-5">
+                    GANANCIAS POR
+                    <span class="text-green">VENTA DIRECTA</span>
+                  </h1>
+                  <div class="row">
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                      <img class="img-fluid" src="./img/Ventas.png" alt="Venta directa" />
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                      <p class="text-center">
+                        Como asociado independiente de Go On Life, adquieres
+                        todos nuestros productos a un precio con descuento
+                        para venderlo a un precio al público sugerido.
+                        <br /><br />
+                        Con las ventas que realices obtienes ganancias de más
+                        del 30% sobre su inversión.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="inicioRapidoModal" tabindex="-1" aria-labelledby="inicioRapidoModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-body p-5">
+                <div class="content">
+                  <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="text-center w-100 mb-5">
+                    BONO DE <span class="text-green">INICIO RÁPIDO</span>
+                  </h1>
+                  <div class="row">
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                      <img class="img-fluid" src="./img/inicio_rapido.png" alt="Inicio Rápido" />
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                      <p class="text-center">
+                        Recibe el 87% al integrar nuevos asociados
+                        independientes a Go On Life con cualquiera de los kit
+                        de inicio.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="duoModal" tabindex="-1" aria-labelledby="duoModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-body p-5">
+                <div class="content">
+                  <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="text-center w-100 mb-5">
+                    BONO <span class="text-green">DUO-LEVEL</span>
+                  </h1>
+                  <div class="row">
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                      <img class="img-fluid" src="./img/duo_level.png" alt="Duo Level" />
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                      <p class="text-center">
+                        De las compras posteriores a su mes de afiliación de
+                        los asociados independientes en tu red cobras el 10%
+                        de tus directos (1er. nivel) y el 50% de sus
+                        indirectos (2do. nivel).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="genModal" tabindex="-1" aria-labelledby="genModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-body p-5">
+                <div class="content">
+                  <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="text-center w-100 mb-5">
+                    BONO <span class="text-green">GENERACIONAL</span>
+                  </h1>
+                  <div class="row">
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                      <img class="img-fluid" src="./img/generacional.png" alt="Generacional" />
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                      <p class="text-center">
+                        Cobra el 5% de tu 1er. a tu 6ta. generación de las
+                        ganancias que cada uno genere en el Bono Duo-Level.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="cpModal" tabindex="-1" aria-labelledby="cpModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-body p-5">
+                <div class="content">
+                  <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="text-center w-100 mb-5">
+                    CLIENTES <span class="text-green">PREFERENTES</span>
+                  </h1>
+                  <div class="row">
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                      <img class="img-fluid" src="./img/cp.png" alt="Clientes Preferentes" />
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                      <p class="text-center">
+                        Al integrar Clientes Preferentes, todas las compras
+                        realizadas por ellos sumarán el puntaje al
+                        Patrocinador, de esta manera puedes quedar activo
+                        totalmente GRATIS.
+                        <br /><br />
+                        Además, puedes generar excedentes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="excModal" tabindex="-1" aria-labelledby="excModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-body p-5">
+                <div class="content">
+                  <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="text-center w-100 mb-5">
+                    BONO DE <span class="text-green">EXCEDENTES</span>
+                  </h1>
+                  <div class="row">
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                      <img class="img-fluid" src="./img/Excedentes.png" alt="Bono de Excedentes" />
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                      <p class="text-center">
+                        Todo puntaje excedente después de tu activación
+                        mensual te genera una ganancia del 58%.
+                        <br /><br />
+                        Cobra 14.5% de su primer nivel de los excedentes
+                        generados por ellos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="lirModal" tabindex="-1" aria-labelledby="lirModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+              <div class="modal-body p-5">
+                <div class="content">
+                  <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h1 class="text-center w-100 mb-5">
+                    BONOS DE <span class="text-green">LIDERAZGO</span>
+                  </h1>
+                  <div class="row">
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                      <img class="img-fluid" src="./img/Liderazgo.png" alt="Bono de Excedentes" />
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                      <div>
+                        <li>
+                          <span class="text-green">Bono Platinos:</span><br />
+                          Se toma el 0.66% de las ventas totales de la empresa
+                          y se paga en forma prorrateada entre todos los que
+                          tengan el rango platino.
+                        </li>
+                        <br />
+                        <li>
+                          <span class="text-green">Bono Diamantes:</span><br />
+                          Se toma el 1% de las ventas totales de la empresa y
+                          se paga en forma prorrateada entre todos los que
+                          tengan el rango diamante.
+                        </li>
+                        <br />
+                        <li>
+                          <span class="text-green">Bono Dobles Diamantes:</span><br />
+                          Se toma el 1.33% de las ventas totales de la empresa
+                          y se paga en forma prorrateada entre todos los que
+                          tengan el rango doble diamante.
+                        </li>
+                        <br />
+                        <li>
+                          <span class="text-green">Bono Triples Diamantes:</span><br />
+                          Se toma el 1.6% de las ventas totales de la empresa
+                          y se paga en forma prorrateada entre todos los que
+                          tengan el rango triple diamante.
+                        </li>
+                        <br />
+                        <li>
+                          <span class="text-green">Bono Embajador Corona:</span><br />
+                          Participa dentro del prorrateo de los triples
+                          diamantes, además, se le paga el 1% de las ventas
+                          totales en su organización.
+                        </li>
+                        <br />
+                        <li>
+                          <span class="text-green">Otros Bonos:</span><br />
+                          Además de estos bonos, también puedes ser participe
+                          de diversos bonos como vacaciones o autos de lujo
+                          que Go On Life preparados.
+                        </li>
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End modals oportunity-->
+      </div>
+      <!--end compensation plan-->
+    </section>
+    <!--End oportunity-->
+
+    <!--Company-->
+    <section class="container-fluid" id="company">
+      <div class="section-title text-center">
+        <h2>Nosotros</h2>
+        <div class="divider">
+          <hr />
+          <i class="far fa-building"></i>
+          <hr />
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+            <img class="img-fluid p-5" src="./img/Logo_Company.png" alt="Logo Go On Life" />
+          </div>
+          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+            <p>
+              Go On Life nació en el año 2015 en la ciudad de Guadalajara en Jalisco, México, gracias a nuestro
+              Presidente y CEO el Lic. Omar Flores un líder nato y con más de 29 años de experiencia en negocios decidió
+              empezar una empresa novedosa para llevar salud y bienestar a los miles de hogares mexicanos con un
+              producto que revoluciono la industria el cual se comercializó por más de 9 años a través de la venta
+              directa; fue así que en el año 2015 como respuesta a otra de las muchas necesidades de los mexicanos que
+              es la economía y junto a todo un equipo ejecutivo se creó Go On Life que funciona bajo el sistema de
+              Network Marketing o Multinivel para lograr llevar economía y salud a todos los hogares de México y el
+              mundo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content-fluid bg-green" style="padding: 2rem 0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="card-company">
+              <div class="icon">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <h3>MISIÓN</h3>
+              <p>
+                Compartir la oportunidad de negocio que llevará a miles de personas a mejorar su estilo de vida mediante
+                un desarrollo integral.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="card-company">
+              <div class="icon">
+                <i class="far fa-eye"></i>
+              </div>
+              <h3>VISIÓN</h3>
+              <p>
+                Ser la mejor opción de negocio para quien desee mejorar su salud y economía en corto, mediano y largo
+                plazo, ayudando así a miles de familias a lograr un mejor estilo de vida, de México para el mundo.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="card-company">
+              <div class="icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3>VALORES</h3>
+              <p>
+                Respeto, Integridad, Armonía, Unidad, Responsabilidad, Honestidad, Lealtad, Honradez, Eficacia y Ética.
+              </p>
+            </div>
+          </div>
+
+        </div>
+    </section>
+    <!--End company-->
+  </main>
+  <section class="container-fuid bg-white m-auto" style="padding:10rem 0;" id="banner">
+    <div class="container">
+      <h2 class="display-2 text-center">Cambia tu <span class="text-green fw-bold">estilo de vida</span> </h2>
+    </div>
+  </section>
+  <footer>
+    <section class="container-fluid bg-secondary py-3 text-white" id="footer">
+      <p class="m-0 text-center">© <span id="year"></span> Go On Life. Todos los derechos reservados.</p>
+    </section>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script>
+    let date = new Date().getFullYear();
+    document.querySelector('#year').innerHTML = date;
+    const place = async ()=>{
+      const url = "http://www.geoplugin.net/json.gp"
+      const response = await fetch(url);
+      const result = await response.json();
+      const countryCode = result.geoplugin_countryCode;
+      if(countryCode==="PE"){
+        document.querySelector('.d-grid').childNodes[1].href="https://drive.google.com/file/d/1DIRYJQFlFd1ljeAPIE6vNjIMtPgnDE5z/view"
+        document.querySelector('.d-grid').childNodes[3].href="#";
+        document.querySelector('.d-grid').childNodes[3].target="";
+        document.querySelector('.btn-lg').href="https://drive.google.com/file/d/1nrI878KOgbrCrxzAyQyjyXGFw3-xhO3W/view";
+      }
+    }
+    place();
+  </script>
+</body>
+
+</html>
